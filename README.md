@@ -18,13 +18,35 @@ A buff time-clock punch card: perforated edges, monospace figures, a red serial 
 
 This tool performs arithmetic on the numbers you enter. It is not financial, tax, accounting, or legal advice, and it does not account for your specific circumstances. Verify any figure before acting on it.
 
+## Use
+
+1. Enter your period income or revenue and pick the period length (per week, per month or per year).
+2. Enter your paid billable hours, then your admin and operations, sales and prospecting, and unpaid learning and other hours.
+3. Enter your business expenses for the same period.
+4. Read your effective hourly rate next to the nominal rate (income divided by paid hours). The results update as you type.
+
+## Why this exists
+
+The rate you quote is not the rate you earn once unpaid hours and expenses are counted. This shows the gap in a single HTML file with no tracking and no signup, under the MIT license.
+
 ## Privacy
 
 Everything runs in your browser. Nothing you type is sent anywhere, stored, or saved. Closing the tab clears it.
 
-## Use it
+## Run locally
 
 Open `index.html` in any modern browser, or host it as a static page. No build step, no dependencies, no network calls.
+
+```
+git clone https://github.com/0xelitesystem/effective-hourly-rate-calculator
+cd effective-hourly-rate-calculator
+```
+
+Then open `index.html`, or serve the folder with `python -m http.server` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one `index.html` file with inline CSS and JavaScript, and no dependencies.
 
 ## More
 
